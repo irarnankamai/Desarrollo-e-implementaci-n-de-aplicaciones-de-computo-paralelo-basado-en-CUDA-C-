@@ -1,14 +1,18 @@
-Procesamiento paralelo de imágenes con CUDA C++
+# Universidad Politécnica Salesiana (UPS) ·
 
-Universidad Politécnica Salesiana (UPS) · Computación Paralela
+** Procesamiento paralelo de imágenes con CUDA C++ **
 
-GPU utilizada: NVIDIA GeForce RTX 3070 (CUDA 8.6)
+**Carrera:** Computación Paralela
 
-Objetivo
+**Integrantes:** Irar Nankamai - Noe Ayavaca.
+
+**GPU utilizada:**NVIDIA GeForce RTX 3070 (CUDA 8.6)
+
+**Objetivo**
 
 Comparar la convolución secuencial en CPU y paralela en GPU mediante CUDA, evaluar el rendimiento y validar la exactitud de los resultados.
 
-Filtros implementados
+**Filtros implementados**
 
 - Media: suavizado con máscaras de 3×3, 9×9 y 21×21.
 
@@ -25,7 +29,7 @@ Requisitos
 
 - Compilador C++ compatible con CUDA (Visual Studio C++ en Windows).
 
-Estructura del proyecto
+**Estructura del proyecto**
 
 practica1/
 
@@ -86,7 +90,7 @@ nvcc -O2 -std=c++17 codigo\experimentos_optimizado.cu -o codigo\experimentos_opt
 
 .\codigo\experimentos_optimizado.exe
 
-Experimentos y resultados
+**Experimentos y resultados**
 
 Se evaluaron imágenes de 2000×2000, 4000×4000 y 6000×6000, distintas máscaras y bloques de 128, 256 y 512 hilos.
 
@@ -101,7 +105,7 @@ Media 9×9,           6000×6000	      1365.360 ms	46.069 ms	 29.64×
 
 Los valores corresponden a medianas de las mediciones. Los tiempos pueden variar según la carga y el estado de la GPU.
 
-Validación
+**Validación**
 
 - 9/9 configuraciones correctas en cada implementación.
 
@@ -111,6 +115,6 @@ Validación
 
 - Tolerancia numérica: 1e-4.
 
-Conclusión
+**Conclusión**
 
 CUDA redujo el tiempo de procesamiento en los experimentos realizados. La versión optimizada obtuvo menores tiempos totales de GPU en las nueve configuraciones; 256 hilos por bloque presentó la mejor mediana observada para Media 9×9 de 4000×4000, aunque se detectó variabilidad entre repeticiones.
