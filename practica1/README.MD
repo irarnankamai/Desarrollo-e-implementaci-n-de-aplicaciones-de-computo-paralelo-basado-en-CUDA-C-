@@ -1,6 +1,6 @@
-# Universidad Politécnica Salesiana (UPS) ·
+# UNIVERSIDAD POLITÉCNICA SALESIANA (UPS) ·
 
-** Procesamiento paralelo de imágenes con CUDA C++ **
+# Procesamiento paralelo de imágenes con CUDA C++ 
 
 **Carrera:** Computación Paralela
 
